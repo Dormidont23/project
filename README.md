@@ -102,7 +102,7 @@
       loop: [ '9100/tcp'] 
 ```
 
-<details><summary>Установка и настройка MySQL</summary>
+## **Установка и настройка MySQL**
 
 Развернем два сервера баз данных: master и replica. Настроим между ними репликацию, в режиме Primary - Secondary.
 
@@ -165,8 +165,6 @@ server-id = 2
 - name: Start slave
   shell: mysql -u root -p'{{ mysql_root_password }}' -e 'START SLAVE;'
 ```
-
-</details>
 
 <details><summary>Установка Wordpress</summary>
 
